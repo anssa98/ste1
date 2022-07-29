@@ -12,10 +12,10 @@
         <visual name="Base">
             <origin xyz="0 0 0" rpy="1.5708 0 0" />
             <geometry>
-                <mesh filename="package://robot_arm_pkg/meshes/stl/Base.stl" scale="0.00098 0.00098 0.00098" />
+                <mesh filename="package://robot_arm_pkg/meshes/stl/1.stl" scale="0.00098 0.00098 0.00098" />
             </geometry>
         </visual>
-        <collision name="Base">
+        <collision name="1">
             <origin xyz="-0.0029 0.00016 0.01165" rpy="3.14159 0 0" />
             <geometry>
                 <cylinder radius="0.0592" length="0.05469" />
@@ -33,17 +33,17 @@
         <visual name="Waist">
             <origin xyz="0 0 0" rpy="1.5708 0 0" />
             <geometry>
-                <mesh filename="package://robot_arm_pkg/meshes/stl/Waist.stl" scale="0.00098 0.00098 0.00098" />
+                <mesh filename="package://robot_arm_pkg/meshes/stl/2.stl" scale="0.00098 0.00098 0.00098" />
             </geometry>
         </visual>
-        <collision name="Waist.000">
+        <collision name="2.000">
             <origin xyz="8e-05 -8e-05 0.00021" rpy="1.5708 0 0" />
             <geometry>
-                <mesh filename="package://robot_arm_pkg/meshes/stl/Waist.001.stl" scale="0.00391 0.00391 0.00391" />
+                <mesh filename="package://robot_arm_pkg/meshes/stl/3.stl" scale="0.00391 0.00391 0.00391" />
             </geometry>
         </collision>
     </link>
-    <link name="arm1">
+    <link name="3">
         
 <inertial>
             <origin xyz="0 0 0" rpy="0 0 0" />
@@ -54,17 +54,17 @@
         <visual name="Arm 01">
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="package://robot_arm_pkg/meshes/stl/Arm 01.stl" scale="0.00098 0.00098 0.00098" />
+                <mesh filename="package://robot_arm_pkg/meshes/stl/4.stl" scale="0.00098 0.00098 0.00098" />
             </geometry>
         </visual>
-        <collision name="Arm 01">
+        <collision name="4">
             <origin xyz="-0.00032 0.05624 0.00439" rpy="0 0 0" />
             <geometry>
                 <box size="0.04221 0.16277 0.02051" />
             </geometry>
         </collision>
     </link>
-    <link name="arm2">
+    <link name="4">
         
 <inertial>
             <origin xyz="0 0 0" rpy="0 0 0" />
@@ -75,16 +75,16 @@
         <visual name="Arm 02">
             <origin xyz="0 0 0" rpy="-1.48894 -1.57209 1.57068" />
             <geometry>
-                <mesh filename="package://robot_arm_pkg/meshes/stl/Arm 02.stl" scale="0.00098 0.00098 0.00098" />
+                <mesh filename="package://robot_arm_pkg/meshes/stl/5.stl" scale="0.00098 0.00098 0.00098" />
             </geometry>
         </visual>
-        <visual name="Cube">
+        <visual name="5">
             <origin xyz="-0.00255 0.0366 0.00196" rpy="-0.0887 1.57209 -1.57119" />
             <geometry>
-                <mesh filename="package://robot_arm_pkg/meshes/stl/Cube.002.stl" scale="0.01172 0.01953 0.00781" />
+                <mesh filename="package://robot_arm_pkg/meshes/stl/6.stl" scale="0.01172 0.01953 0.00781" />
             </geometry>
         </visual>
-        <collision name="Arm 02">
+        <collision name="6">
             <origin xyz="-0.00436 0.05687 0.01375" rpy="-1.4891 -1.57209 1.57084" />
             <geometry>
                 <box size="0.02681 0.16397 0.0384" />
@@ -102,17 +102,17 @@
         <visual name="Gripper">
             <origin xyz="0 0 0" rpy="0.60119 -1.56847 -1.57014" />
             <geometry>
-                <mesh filename="package://robot_arm_pkg/meshes/stl/Gripper.stl" scale="0.00391 0.00391 0.00391" />
+                <mesh filename="package://robot_arm_pkg/meshes/stl/7.stl" scale="0.00391 0.00391 0.00391" />
             </geometry>
         </visual>
-        <collision name="Gripper.000">
+        <collision name="7">
             <origin xyz="0.00024 -0.00025 0.00033" rpy="0.60128 -1.56847 -1.57014" />
             <geometry>
-                <mesh filename="package://robot_arm_pkg/meshes/stl/Gripper.001.stl" scale="0.00391 0.00391 0.00391" />
+                <mesh filename="package://robot_arm_pkg/meshes/stl/all.stl" scale="0.00391 0.00391 0.00391" />
             </geometry>
         </collision>
     </link>
-    <joint name="base_joint" type="revolute">
+    <joint name="all" type="revolute">
         <origin xyz="-0.00345 -1e-05 0.04449" rpy="0 0 0" />
         <parent link="base" />
         <child link="waist" />
